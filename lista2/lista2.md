@@ -21,6 +21,14 @@ mapMaybe g (x:xs) =
         Just y  -> y : mapMaybe g xs
         Nothing -> mapMaybe g xs
 ```
+### Exemplo de uso:
+
+```haskell
+main :: IO ()
+main = do
+        let m = mapMaybe testFunc [2,3,1,0,-1,-232]
+        print m
+```
 
 ## 2. Classificar elementos de uma lista em dois grupos
 
@@ -40,8 +48,6 @@ classifica (Right y : ys) = (ls, y:rs)
 ```haskell
 main :: IO ()
 main = do
-        let m = mapMaybe testFunc [2,3,1,0,-1,-232]
-        print m
         let c = classifica [Left 6, Left 5, Right True, Left 3]
         print c
 ```
