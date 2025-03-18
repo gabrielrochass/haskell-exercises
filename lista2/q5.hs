@@ -1,4 +1,5 @@
 -- 5) Implemente uma instância de Num para Vetor de modo que as operações sejam feitas elemento a elemento.
+
 -- exemplos:
 --
 -- Vetor 1 2 3 + Vetor 0 1 1 == Vetor 1 3 4
